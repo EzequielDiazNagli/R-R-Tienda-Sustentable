@@ -113,10 +113,15 @@ header{
 /* Productos destacados */
 
 .productos img{
-    width: 300px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: all 1s;
+}
+
+.productos img:hover{
+    transform: scale(1.2);
 }
 
 .productos{
@@ -147,6 +152,11 @@ header{
     margin: 50px;
     display: flex;
     justify-content: center;
+    transition: all 1s;
+}
+
+.mas_productos:hover{
+    transform: scale(1.2);
 }
 
 h3{

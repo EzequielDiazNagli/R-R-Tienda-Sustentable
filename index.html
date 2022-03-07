@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&R Tienda Sustentable</title>
+    <!-- LINK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- ANIMATE.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- FONT AWESOME -->
@@ -14,7 +16,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./estilo/style.css">
 </head>
-<body class="container">
+<body class="container-fluid">
     <div class="nav_sticky">
         <nav class="nav_main">
             <ul class="nav_menu">
@@ -48,22 +50,22 @@
         </nav>
     </div>
     <hr>
-    <header class="animate__animated animate__fadeInUp">
-            <h2 class="texto h2">¡Haz la diferencia!</h2>
-            <p class="texto p">Productos sustentables para cuidar nuestro planeta</p>
-            <a class="texto btn" href="#">Comprar</a>
+    <header>
+            <h2 class="texto h2 animate__animated animate__fadeInUp">¡Haz la diferencia!</h2>
+            <p class="texto p animate__animated animate__fadeInUp">Productos sustentables para cuidar nuestro planeta</p>
+            <a class="texto btn animate__animated animate__fadeInUp" href="#">Comprar</a>
     </header>
 
-    <section class="animate__animated animate__fadeInUp">    
+    <section>    
         <div class="texto_separador">
-            <h3>
+            <h3 class="animate__animated animate__fadeInUp">
                 Haz tu vida mas sustentable con productos libre de plastico y biodegradables. 
             </h3>
-            <p>
+            <p class="animate__animated animate__fadeInUp">
                 Productos destacados.
             </p>
         </div>
-        <div class="productos">   
+        <div class="productos animate__animated animate__fadeInUp">   
             <div class="listas">
                 <h3>Kit1</h3>
                 <img src="./imagenes/kit1.jpg" alt="kit1">
@@ -118,23 +120,69 @@
             <p class="banner_p">Comprando 5 o mas de nuestros productos, parte de lo recaudado será donado a diferentes ONG.</p>
         </div>
         <hr>
-        <div class="parte_a">
-            <div>
-                <img src="./imagenes/plantita.jpg" alt="" class="img1">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/a-carusel.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/b-carusel.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/c-carusel.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="descripcion">
-                <h5>Cosecha en casa</h5>
-                <p class="descripcion_p">Aprende como hacer tu propia huerta</p>
-                <a class="btn_interes" href="#">Saber Mas</a>
+            <div class="col-lg-6 col-md-12 mas_vendido">
+                <div class="mas_vendido-items">
+                    <h5>¡Lo mas vendido!</h5>
+                    <p class="descripcion_p">Los productos favoritos de nuestros clientes</p>
+                    <a class="btn_interes" href="#">Comprar</a>
+                </div>
             </div>
         </div>
-        <div class="parte_b">
-            <div class="descripcion">
-                <h5>Dia mundial medio ambiente.</h5>
-                <p class="descripcion_p">Aprende la importancia de cuidar nuestro planeta</p>
-                <a class="btn_interes" href="#">¡Haz Click Aqui!</a>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mas_vendido">
+                <div class="mas_vendido-items">
+                    <h5>Dia mundial medio ambiente.</h5>
+                    <p class="descripcion_p">Aprende la importancia de cuidar nuestro planeta</p>
+                    <a class="btn_interes" href="#">¡Haz Click Aqui!</a>
+                </div>
             </div>
-            <div>  
+            <div class="col-lg-6 col-md-12">  
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kFSdcadGJmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -174,5 +222,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

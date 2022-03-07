@@ -18,9 +18,18 @@ ul{
     list-style: none;
 }
 
+.container-fluid{
+    width: 91.5%;
+    margin: auto;
+}
+
 .container{
     width: 90%;
     margin: auto;
+}
+
+hr{
+    margin: 0;
 }
 
 /* Navigation */
@@ -31,12 +40,13 @@ ul{
     height: 60px;
     padding: 20px 0;
     background-color: white;
+    margin: 0;
 }
 
 .nav_sticky{
     position: sticky;
     top: 0%;
-    z-index:2;
+    z-index: 2;
 }
 
 .nav_logo{
@@ -46,14 +56,17 @@ ul{
 
 .nav_main ul{
     display: flex;
+    margin: 0;
 }
 
 .nav_main ul li{
     padding: 10px;
+    margin: 0;
 }
 
 .nav_menu{
     font-size: 15px;
+    margin: 0;
 }
 
 .nav_main ul li a:hover{
@@ -114,8 +127,8 @@ header{
 /* Productos destacados */
 
 .productos img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
     border-radius: 10px;
     transition: all 1s;
@@ -192,47 +205,38 @@ h3{
 
 /* Seccion de interes */
 
-.parte_a{
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-.parte_a img{
+.carousel{
     width: 700px;
-    height: 437px;
-    border-radius: 10px;
+    margin-left: 100px;
 }
 
-.parte_b{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.mas_vendido{
+    display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    justify-content: center;
 }
 
-.parte_b iframe{
-    width: 700px;
-    height: 437px;
-    border-radius: 10px;
-}
-
-.descripcion{
+.mas_vendido-items{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
-}
-
-.descripcion h5,
-.descripcion p,
-.descripcion a{
-    margin: 30px;
 }
 
 h5{
     font-size: 40px;
+}
+
+.descripcion_p{
+    font-size: 25px;
+}
+
+.row{
+    margin-top: 50px;
+}
+
+iframe{
+    width: 700px;
+    height: 437.5px;
 }
 
 .btn_interes{

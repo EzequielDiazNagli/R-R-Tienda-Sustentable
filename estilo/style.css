@@ -379,11 +379,6 @@ footer{
 /* MOBILE */
 
 @media (max-width: 768px){
-    body{
-    }
-
-    .nav_main{
-    }
 
     .nav_logo{
         margin-right: 0;

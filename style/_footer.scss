@@ -1,0 +1,30 @@
+footer{
+    background-color: rgb(219, 219, 219);
+    margin-top: 10px;
+    .footer_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            li{
+                font-size: 30px;
+                padding: 20px;
+                &:hover{
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}
+
+.footer_logo{
+    width: 200px;
+}
+
+.social a{
+    margin: 0 30px;
+    i{
+        font-size: 2rem;
+    }
+}

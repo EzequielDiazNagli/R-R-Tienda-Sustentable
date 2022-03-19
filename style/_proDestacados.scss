@@ -17,6 +17,18 @@
     }
 }
 
+$productos:(
+    producto1: rgb(80, 80, 80),
+    producto2: rgb(44, 44, 44),
+    producto3: black,
+);
+
+@each $producto, $color in $productos{
+    .mapeo--#{$producto}{
+        color: $color;
+    }
+};
+
 .productos img{
     width: 300px;
     height: 300px;

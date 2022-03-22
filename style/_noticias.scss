@@ -25,9 +25,19 @@
     }
     h2{
         font-size: 15px;
+        padding: 0 70px;
+        &:hover{
+            opacity: 0.5;
+            transform: scale(0.9);
+        }
     }
     img{
         width: 400px;
+        border-radius: 10px;
+        &:hover{
+            opacity: 0.5;
+            transform: scale(0.9);
+        }
     }
 }
 

@@ -266,6 +266,34 @@ footer {
   padding: 5px 5px;
   margin: 10px; }
 
+.sec_noticias {
+  background-image: linear-gradient(#dbdbdb, white);
+  border-radius: 10px;
+  margin-top: 10px; }
+  .sec_noticias .actualidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sec_noticias .actualidad h1 {
+      font-size: 30px;
+      margin: 25px 0; }
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 50px;
+  margin-bottom: 50px; }
+  .noticias .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .noticias h2 {
+    font-size: 15px; }
+  .noticias img {
+    width: 400px; }
+
 /* MOBILE */
 @media (max-width: 768px) {
   .nav_logo {

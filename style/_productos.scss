@@ -1,6 +1,6 @@
 .texto_productos{
     margin-top: 10px;
-    background-image: linear-gradient(rgb(219, 219, 219,), white);
+    background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
     border-radius: 10px;
     h1, h2{
         @include flex-column-center;

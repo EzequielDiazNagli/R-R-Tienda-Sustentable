@@ -4,16 +4,15 @@
   align-items: center;
   height: 60px;
   padding: 20px 0;
-  background-color: white;
-  margin: 0; }
+  background-color: white; }
   .nav_main ul {
     display: flex;
+    padding: 0;
     margin: 0; }
     .nav_main ul li {
-      padding: 10px;
-      margin: 0; }
+      padding: 10px; }
       .nav_main ul li:hover {
-        border-bottom: 2px solid black; }
+        border-bottom: 1px solid black; }
 
 .nav_sticky {
   position: sticky;
@@ -25,8 +24,7 @@
   width: 100px; }
 
 .nav_menu {
-  font-size: 15px;
-  margin: 0; }
+  font-size: 15px; }
 
 * {
   box-sizing: border-box;
@@ -64,7 +62,7 @@ ul {
   list-style: none; }
 
 .container-fluid {
-  width: 91.5%;
+  width: 91.26%;
   margin: auto; }
 
 .container {
@@ -81,7 +79,7 @@ hr {
   align-items: center;
   font-size: 30px;
   margin-bottom: 50px;
-  background-image: linear-gradient(#dbdbdb, white);
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
   border-radius: 10px; }
   .texto_separador p {
     margin-top: 50px; }
@@ -158,7 +156,7 @@ iframe {
 .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-image: linear-gradient(to top, #dbdbdb, white);
+  background-image: linear-gradient(to top, rgba(219, 219, 219, 0.5), white);
   border-radius: 10px; }
   .productos .listas {
     display: flex;
@@ -224,7 +222,7 @@ footer {
 
 .texto_productos {
   margin-top: 10px;
-  background-image: linear-gradient(#dbdbdb, white);
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
   border-radius: 10px; }
   .texto_productos h1, .texto_productos h2 {
     display: flex;
@@ -278,7 +276,7 @@ footer {
   margin: 10px; }
 
 .sec_noticias {
-  background-image: linear-gradient(#dbdbdb, white);
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
   border-radius: 10px;
   margin-top: 10px; }
   .sec_noticias .actualidad {
@@ -313,6 +311,170 @@ footer {
       opacity: 0.5;
       transform: scale(0.9); }
 
+.banner_nosotros {
+  background-color: #dbdbdb;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; }
+  .banner_nosotros img {
+    width: 500px; }
+
+.parent {
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 30px 0; }
+  .parent h2 {
+    margin-bottom: 20px; }
+  .parent .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 20px; }
+    .parent .div1 img {
+      width: 400px;
+      border-radius: 5px; }
+  .parent .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin-right: 200px;
+    margin-top: 20px; }
+  .parent .div3 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin-left: 250px; }
+  .parent .div4 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px; }
+    .parent .div4 img {
+      width: 400px;
+      border-radius: 5px; }
+  .parent .div5 {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px; }
+    .parent .div5 img {
+      width: 400px;
+      border-radius: 5px; }
+  .parent .div6 {
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin-right: 200px; }
+
+.contactanos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.contacto1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #dbdbdb;
+  display: flex;
+  border-radius: 10px; }
+  .contacto1 .contacto_a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 100px; }
+    .contacto1 .contacto_a h2 {
+      font-size: 30px;
+      margin: 20px 0; }
+    .contacto1 .contacto_a p {
+      font-size: 15px; }
+  .contacto1 .contacto_b {
+    display: flex;
+    align-content: center;
+    margin: auto; }
+
+.contacto2 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 150px; }
+
+.contacto3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: linear-gradient(rgba(219, 219, 219, 0.5), white);
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 150px; }
+
+.contacto4 {
+  grid-area: 3 / 1 / 4 / 2;
+  margin: auto; }
+  .contacto4 iframe {
+    width: 450px;
+    height: 400px; }
+
+.contacto5 {
+  grid-area: 3 / 2 / 4 / 3; }
+  .contacto5 form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px; }
+    .contacto5 form h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px; }
+    .contacto5 form input, .contacto5 form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px;
+      box-sizing: border-box;
+      font-size: 15px;
+      border: none; }
+    .contacto5 form textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+      min-width: 100%; }
+    .contacto5 form #boton {
+      background: #31384a;
+      color: #fff;
+      padding: 20px; }
+      .contacto5 form #boton:hover {
+        cursor: pointer; }
+
 /* MOBILE */
 @media (max-width: 768px) {
   .nav_logo {
@@ -326,28 +488,27 @@ footer {
     text-align: center; }
   .btn {
     font-size: 15px; }
-  .texto_separador h3 {
+  .texto_separador h2 {
     text-align: center; }
   .productos {
     grid-template-columns: repeat(1, 1fr); }
-  .banner_h4, .banner_p {
+  .banner h4, .banner p {
     margin: 0;
     font-size: 30px;
     text-align: center; }
-  .parte_a, .parte_b {
-    grid-template-columns: repeat(1, 1fr); }
-  .parte_a img, .parte_b iframe {
+  .carousel {
+    width: 100%;
+    margin: 0; }
+  .js-photo-page-video-iframe {
     width: 100%; }
-  .descripcion {
-    text-align: center; }
   .footer_menu {
     flex-direction: column; }
-  .footer_logo {
-    width: 150px; }
-  .footer_menu ul li {
-    font-size: 20px; }
-  .social a i {
-    font-size: 1.5rem; }
+    .footer_menu .footer_logo {
+      width: 150px; }
+    .footer_menu ul li a {
+      font-size: 20px; }
+    .footer_menu .social a i {
+      font-size: 1.5rem; }
   /* SECCION PRODUCTOS */
   .texto_productos h1, .texto_productos h2 {
     font-size: 30px; }
@@ -365,7 +526,63 @@ footer {
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-right: 450px; } }
+    margin-right: 450px; }
+  /* SECCION NOTICIAS */
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .noticias img {
+      width: 100%; }
+  /* SECCION NOSOTROS */
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    .parent .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      margin-top: 20px;
+      margin-left: 0; }
+    .parent .div2 {
+      grid-area: 2 / 1 / 3 / 2;
+      margin: 0; }
+    .parent .div3 {
+      grid-area: 4 / 1 / 5 / 2;
+      margin: 0; }
+    .parent .div4 {
+      grid-area: 3 / 1 / 4 / 2;
+      margin: 0; }
+    .parent .div5 {
+      grid-area: 5 / 1 / 6 / 2;
+      margin: 0; }
+    .parent .div6 {
+      grid-area: 6 / 1 / 7 / 2;
+      margin: 0; }
+  /* SECCION CONTACTO */
+  .contactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr repeat(5, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+  .contacto1 {
+    grid-area: 1 / 1 / 3 / 2; }
+    .contacto1 .contacto_a {
+      padding: 0; }
+    .contacto1 img {
+      width: 100%; }
+  .contacto2 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: linear-gradient(rgba(219, 219, 219, 0.5), white); }
+  .contacto3 {
+    grid-area: 4 / 1 / 5 / 2;
+    background-image: none; }
+  .contacto4 {
+    grid-area: 6 / 1 / 7 / 2; }
+  .contacto5 {
+    grid-area: 5 / 1 / 6 / 2;
+    margin-bottom: 20px; } }
 
 @media (max-width: 360px) {
   .nav_main ul li {

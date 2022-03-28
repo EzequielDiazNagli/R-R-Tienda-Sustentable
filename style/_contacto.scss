@@ -1,0 +1,101 @@
+.contactanos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contacto1 { grid-area: 1 / 1 / 2 / 3; 
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    border-radius: 10px;
+    .contacto_a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-left: 100px;
+        h2{
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .contacto_b{
+        display: flex;
+        align-content: center;
+        margin: auto;
+    }
+}
+.contacto2 { grid-area: 2 / 1 / 3 / 2; 
+    background-image: linear-gradient( rgba(219, 219, 219, 0.5), white);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 150px;
+}
+.contacto3 { grid-area: 2 / 2 / 3 / 3; 
+    background-image: linear-gradient( rgba(219, 219, 219, 0.5), white);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 150px;
+}
+.contacto4 { grid-area: 3 / 1 / 4 / 2; 
+    margin: auto;
+    iframe{
+        width: 450px;
+        height: 400px;
+    }
+}
+.contacto5 { grid-area: 3 / 2 / 4 / 3;
+    form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        h2{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        input, textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+            border: none;
+        }
+    
+        textarea{
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    
+        #boton{
+            background: #31384a;
+            color: #fff;
+            padding: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+

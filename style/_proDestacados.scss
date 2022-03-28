@@ -1,7 +1,7 @@
 .productos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-image: linear-gradient(to top, rgb(219, 219, 219,), white);
+    background-image: linear-gradient(to top, rgba(219, 219, 219, 0.5), white);
     border-radius: 10px;
     .listas{
         display: flex;

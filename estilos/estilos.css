@@ -44,10 +44,10 @@ header {
   margin-bottom: 50px;
   margin-top: 10px;
   border-radius: 10px; }
-
-.texto {
-  margin-right: 500px;
-  font-size: 40px; }
+  header h1 {
+    font-size: 50px; }
+  header p {
+    font-size: 35px; }
 
 /* Body */
 body {
@@ -167,6 +167,7 @@ iframe {
     .productos .listas h3 {
       margin: 20px; }
     .productos .listas ul {
+      padding: 0;
       line-height: 3; }
 
 .mapeo--producto1 {
@@ -475,16 +476,17 @@ footer {
       .contacto5 form #boton:hover {
         cursor: pointer; }
 
-/* MOBILE */
+/* TABLET */
 @media (max-width: 768px) {
   .nav_logo {
     margin-right: 0;
     width: 0px; }
   .nav_main ul li {
     padding: 20px; }
-  .texto {
+  header h1 {
+    font-size: 35px; }
+  header p {
     font-size: 30px;
-    margin-left: 500px;
     text-align: center; }
   .btn {
     font-size: 15px; }
@@ -532,7 +534,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     .noticias img {
-      width: 100%; }
+      width: 90%; }
   /* SECCION NOSOTROS */
   .parent {
     display: grid;
@@ -584,41 +586,109 @@ footer {
     grid-area: 5 / 1 / 6 / 2;
     margin-bottom: 20px; } }
 
+/* MOBILE */
 @media (max-width: 360px) {
   .nav_main ul li {
     padding: 2px;
     font-size: 12px; }
-  .texto_separador h3, p {
+  header h1 {
+    font-size: 30px; }
+  header p {
+    font-size: 25px;
+    text-align: center; }
+  .texto_separador h2, p {
     font-size: 20px; }
-  .banner_h4, .banner_p {
+  .productos img {
+    width: 200px;
+    height: 200px; }
+  .banner h2 {
+    font-size: 25px;
+    text-align: center; }
+  .banner p {
     font-size: 20px; }
+  .mas_vendido .mas_vendido-items h5 {
+    font-size: 30px;
+    text-align: center; }
+  .mas_vendido .mas_vendido-items p {
+    font-size: 25px;
+    text-align: center; }
+  iframe {
+    width: 200px;
+    height: 200px; }
   .footer_logo {
     width: 100px; }
-  .footer_menu ul {
+  footer .footer_menu ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .footer_menu ul li {
-    font-size: 15px; }
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0; }
+    footer .footer_menu ul li {
+      padding: 0; }
+      footer .footer_menu ul li a {
+        font-size: 15px; }
+      footer .footer_menu ul li:hover {
+        border-bottom: 1px solid black; }
   /* SECCION PRODUCTOS */
   .texto_productos h1, .texto_productos h2 {
     font-size: 25px; }
+  .nav_ver {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px; }
+    .nav_ver ul li {
+      margin: 10px 0;
+      padding: 0 25px; }
   .seccion_productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 100px; }
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
   .lista_productos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
-    margin-right: 200px; }
-  .nav_ver {
-    margin: 0; }
-  .nav_ver ul {
-    width: 61.5%; }
-  .nav_ver ul li {
-    padding-left: 42px;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-right: 150px; } }
+    margin: 0;
+    gap: 0; }
+    .lista_productos img {
+      width: 200px;
+      height: 200px; }
+  /* SECCION NOTICIAS */
+  .noticias {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .noticias img {
+      width: 90%; }
+  /* SECCION NOSOTROS */
+  .banner_nosotros img {
+    width: 80%; }
+  .parent {
+    gap: 20px;
+    text-align: center; }
+    .parent .div1 img {
+      width: 90%; }
+    .parent .div2, .parent .div3, .parent .div6 {
+      padding: 0; }
+      .parent .div2 p, .parent .div3 p, .parent .div6 p {
+        font-size: 16px; }
+    .parent .div4 img {
+      width: 90%; }
+    .parent .div5 img {
+      width: 90%; }
+  /* SECCION CONTACTO */
+  .contactanos .contacto1 {
+    display: flex;
+    flex-direction: column; }
+    .contactanos .contacto1 .contacto_a h2 {
+      margin: 10px 0; }
+    .contactanos .contacto1 .contacto_b {
+      display: flex;
+      justify-content: center; }
+      .contactanos .contacto1 .contacto_b img {
+        width: 50%; }
+  .contactanos .contacto2, .contactanos .contacto3 {
+    padding: 0; }
+    .contactanos .contacto2 h2, .contactanos .contacto3 h2 {
+      font-size: 25px; }
+    .contactanos .contacto2 p, .contactanos .contacto3 p {
+      font-size: 15px; }
+  .contactanos .contacto4 iframe {
+    width: 100%; }
+  .contactanos .contacto5 form {
+    width: 100%; } }

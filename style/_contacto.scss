@@ -6,6 +6,13 @@
     grid-row-gap: 0px;
     margin-top: 10px;
     margin-bottom: 30px;
+    h2{
+        font-size: 30px;
+        margin: 25px 0;
+    }
+    p{
+        font-size: 20px;
+    }
 }
 
 .contacto1 { grid-area: 1 / 1 / 2 / 3; 
@@ -18,13 +25,6 @@
         justify-content: center;
         text-align: center;
         padding-left: 100px;
-        h2{
-            font-size: 30px;
-            margin: 20px 0;
-        }
-        p{
-            font-size: 15px;
-        }
     }
     .contacto_b{
         display: flex;

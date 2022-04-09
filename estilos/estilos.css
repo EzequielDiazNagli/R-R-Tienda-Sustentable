@@ -118,6 +118,12 @@ hr {
 .carousel {
   width: 700px;
   margin-left: 100px; }
+  .carousel h5 {
+    color: black;
+    font-size: 30px; }
+  .carousel p {
+    color: black;
+    font-size: 20px; }
 
 .mas_vendido {
   display: flex;
@@ -393,6 +399,11 @@ footer {
   grid-row-gap: 0px;
   margin-top: 10px;
   margin-bottom: 30px; }
+  .contactanos h2 {
+    font-size: 30px;
+    margin: 25px 0; }
+  .contactanos p {
+    font-size: 20px; }
 
 .contacto1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -405,11 +416,6 @@ footer {
     justify-content: center;
     text-align: center;
     padding-left: 100px; }
-    .contacto1 .contacto_a h2 {
-      font-size: 30px;
-      margin: 20px 0; }
-    .contacto1 .contacto_a p {
-      font-size: 15px; }
   .contacto1 .contacto_b {
     display: flex;
     align-content: center;
@@ -476,6 +482,63 @@ footer {
       .contacto5 form #boton:hover {
         cursor: pointer; }
 
+/* NOTEBOOK */
+@media (max-width: 1200px) {
+  .texto_separador h2 {
+    text-align: center; }
+  .banner h4, .banner p {
+    margin: 0;
+    font-size: 30px;
+    text-align: center; }
+  .carousel {
+    width: 100%;
+    margin: 0; }
+  .js-photo-page-video-iframe {
+    width: 100%; }
+  .carousel {
+    width: 100%;
+    margin: 0; }
+  .js-photo-page-video-iframe {
+    width: 100%; }
+  .footer_menu .footer_logo {
+    width: 150px; }
+  .footer_menu ul li a {
+    font-size: 20px; }
+  .footer_menu .social a i {
+    font-size: 1.5rem; }
+  /* SECCION PRODUCTOS */
+  .seccion_productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px; }
+  .lista_productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0; }
+  .nav_ver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .nav_ver ul li {
+      font-size: 20px;
+      margin-right: 0;
+      padding: 0 20px; }
+  /* SECCION NOTICIAS */
+  .noticias img {
+    width: 90%; }
+  /* SECCION NOSOTROS */
+  .parent {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px; }
+    .parent .div1, .parent .div2 {
+      margin: 20px 0; }
+    .parent .div3, .parent .div4, .parent .div5, .parent .div6 {
+      margin: 0;
+      padding: 0; }
+    .parent .div1 img, .parent .div4 img, .parent .div5 img {
+      width: 400px; } }
+
 /* TABLET */
 @media (max-width: 768px) {
   .nav_logo {
@@ -520,15 +583,11 @@ footer {
     margin-bottom: 100px; }
   .lista_productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 12px; }
+    grid-template-columns: repeat(2, 1fr); }
   .nav_ver ul li {
-    padding-left: 42px;
     font-size: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-right: 450px; }
+    margin-right: 0;
+    padding: 0 20px; }
   /* SECCION NOTICIAS */
   .noticias {
     display: grid;
@@ -568,6 +627,11 @@ footer {
     grid-template-rows: 0.1fr repeat(5, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
+    .contactanos h2 {
+      font-size: 25px;
+      margin: 20px 0; }
+    .contactanos p {
+      font-size: 20px; }
   .contacto1 {
     grid-area: 1 / 1 / 3 / 2; }
     .contacto1 .contacto_a {
@@ -672,11 +736,14 @@ footer {
     .parent .div5 img {
       width: 90%; }
   /* SECCION CONTACTO */
+  .contactanos h2 {
+    font-size: 20px;
+    margin: 20px 0; }
+  .contactanos p {
+    font-size: 15px; }
   .contactanos .contacto1 {
     display: flex;
     flex-direction: column; }
-    .contactanos .contacto1 .contacto_a h2 {
-      margin: 10px 0; }
     .contactanos .contacto1 .contacto_b {
       display: flex;
       justify-content: center; }
@@ -684,10 +751,6 @@ footer {
         width: 50%; }
   .contactanos .contacto2, .contactanos .contacto3 {
     padding: 0; }
-    .contactanos .contacto2 h2, .contactanos .contacto3 h2 {
-      font-size: 25px; }
-    .contactanos .contacto2 p, .contactanos .contacto3 p {
-      font-size: 15px; }
   .contactanos .contacto4 iframe {
     width: 100%; }
   .contactanos .contacto5 form {
